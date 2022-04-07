@@ -300,6 +300,24 @@ html{
 .image-section:hover .text-area{
     display: block;
 }
+@media (max-width:450px){
+    .text-area{
+        padding: 5px;
+    }
+}
+@media (max-width:406px){
+    .text-area p{
+        font-size: 16px;
+    }
+    .text-area h3{
+        font-size: 20px;
+    }
+    .text-area .orderbtn{
+        padding: 4px 10px;
+    }
+}
+
+
 /* gallery section ==================================================================== styling ends */
 
 
