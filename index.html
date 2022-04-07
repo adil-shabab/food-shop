@@ -1,0 +1,680 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn  -->
+    <script src="https://kit.fontawesome.com/f1c31f30b1.js" crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+
+
+    <!-- navbar ================================================================================ section -->
+    <div class="navbar navbar-expand-lg bg-white lr-p sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-brand"><i class="fa fa-utensils"></i><span>Food</span></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span><i
+                        class="fa fa-bars"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto text-center font-weight-bold">
+                    <li class="navbar-item"><a href="#home">Home</a></li>
+                    <li class="navbar-item"><a href="#special">Speacial</a></li>
+                    <li class="navbar-item"><a href="#popular">Popular</a></li>
+                    <li class="navbar-item"><a href="#gallery">Gallery</a></li>
+                    <li class="navbar-item"><a href="#review">Review</a></li>
+                    <li class="navbar-item"><a href="#order">order</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- navbar ================================================================================ section -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- home ================================================================================ section -->
+    <header class="home" id="home">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="col-md-6 p-5">
+                    <h1 style="font-size: 40px; font-weight: bold;">Your Favourite Dishes</h1>
+                    <p class="text-justify para">Lorem, ipsum dolor sit amet consectetur adipisicin, eve perspiciatis
+                        alias? Eaque quis iste cupiditate usamus animi sequi ullam sint esse aspernatur eum, aut, minus
+                        ratio of ea quam. Quisquam voluptate nihil minus expedita distinctio rerum omnis fugit well.</p>
+                    <a href="#order" class=" btn orderbtn">Order Now</a>
+                </div>
+                <div class="col-md-6 img-column">
+                    <img class="home-img" src="/images/home-img.png" alt="home image" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home ================================================================================ section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- special ================================================================================== section -->
+    <section id="special">
+        <div style="position: relative;" class="container-fluid">
+            <h1 class="text-center" style="font-weight: bold;">Our <span style="color: var(--red);">Special </span>
+                Dishes</h1>
+            <div class="row d-flex mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-1')"
+                        class="box box-1 text-center active d-flex justify-content-center align-items-center">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-2')"
+                        class="box box-2 text-center active d-flex justify-content-center align-items-center ">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-3')"
+                        class="box box-3 text-center active d-flex justify-content-center align-items-center ">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-4')"
+                        class="box box-4 text-center active d-flex justify-content-center align-items-center ">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-5')"
+                        class="box box-5 text-center active d-flex justify-content-center align-items-center ">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div onmouseover="add('.box-6')"
+                        class="box box-6 text-center active d-flex justify-content-center align-items-center ">
+                        <div class="hidden">
+                            <img class="none" src="/images/s-1.png" alt="">
+                            <h3 class="none">Tasty Burger</h3>
+                            <p class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere culpa
+                                veniam nam, adipisci quidem nostrum. Totam mollitia ipsum deserunt temporibus quis
+                                officiis error ducimus accusamus placeat? Iure, in. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#home" class="btn arrow"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </section>
+    <!-- special ================================================================================== section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- popular ================================================================================== section -->
+    <section id="popular">
+        <div class="container">
+            <h1 class="text-center" style="font-weight: bold;">Most <span style="color: var(--red);">Popular
+                </span>Foods</h1>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-1.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Tasty Burger</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#order" class=" btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-2.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Tasty Cake</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#order" class="btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-3.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Tasty Sweets</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#order" class=" btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-4.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Tasty Cupcake</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#order" class=" btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-5.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Cold Drinks</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#order" class=" btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="area text-center mb-4">
+                        <a href="" class="btn button">$5 - $20</a>
+                        <img src="/images/p-6.jpg" alt="img" style="width: 100%; height: auto;">
+                        <h2>Cold Ice-Cream</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#order" class=" btn orderbtn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popular ================================================================================== section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- step =================================================================================================== section -->
+    <section id="step">
+        <div class="container">
+            <h1 class="text-center" style="font-weight: bold;">How It <span
+                    style="color: var(--red); font-weight: bold;">Works</span></h1>
+            <div class="row mt-5">
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <img class="step-img img-fluid" src="/images/step-1.jpg" alt="">
+                    <div class="mt-3">
+                        <h5 class="text-center heading">Choose Your</h5>
+                        <h5 class="text-center heading">Favourite Food</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <img class="step-img img-fluid" src="/images/step-2.jpg" alt="">
+                    <div class="mt-3">
+                        <h5 class="text-center heading">Free and Fast</h5>
+                        <h5 class="text-center heading">Delivery</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <img class="step-img img-fluid" src="/images/step-3.jpg" alt="">
+                    <div class="mt-3">
+                        <h5 class="text-center heading">Easy Payment</h5>
+                        <h5 class="text-center heading">Methods</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <img class="step-img img-fluid" src="/images/step-4.jpg" alt="">
+                    <div class="mt-3">
+                        <h5 class="text-center heading">And, Enjoy Your</h5>
+                        <h5 class="text-center heading">Foood</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- step =================================================================================================== section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- gallery ===================================================================================== section -->
+    <section id="gallery">
+        <div class="container-fluid p-5">
+            <h1 class="text-center" style="font-weight: bold;">Our Food <span style="color: var(--red);">Gallery</span>
+            </h1>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-1.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-2.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-3.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-4.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-5.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-6.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="#order" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-7.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-8.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="image-section">
+                        <img src="/images/g-9.jpg" alt="" style="width: 100%; height: auto;">
+                        <div class="text-area text-center">
+                            <h3 style="font-weight: bold;">Tasty Food</h3>
+                            <p>Lorem it sed iste placeat eos corporis odit at cum dignissimos
+                                architecto.</p>
+                            <a href="" class="btn orderbtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery ===================================================================================== section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- review =================================================================================== section  -->
+    <section id="review">
+        <div class="container">
+            <h1 class="text-center " style="font-weight: bold;">Our Customers <span style="color: var(--red);">Review</span></h1>
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-md-6 col-lg-4 text-white">
+                    <div class="bin">
+                        <img style="width: 40%;" class="rounded-circle" src="/images/pic1.png" alt="">
+                        <div class="text d-flex justify-content-center align-items-center flex-column">
+                            <h3>Gorgino Bale</h3>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
+                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-white">
+                    <div class="bin">
+                        <img style="width: 40%;" class="rounded-circle" src="/images/pic2.png" alt="">
+                        <div class="text d-flex justify-content-center align-items-center flex-column">
+                            <h3>Gorgino Bale</h3>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
+                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-white">
+                    <div class="bin">
+                        <img style="width: 40%;" class="rounded-circle" src="/images/pic3.png" alt="">
+                        <div class="text d-flex justify-content-center align-items-center flex-column">
+                            <h3>Gorgino Bale</h3>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-justify p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia adipisci aliquam obcaecati placeat odit soluta assumenda exercitationem,
+                                inventore quidem doloribus sapiente, laboriosam, qui suscipit harum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <review =================================================================================== section  -->
+        
+
+
+
+
+
+
+
+    
+
+    <!-- order ======================================================================================================= section -->
+    <section id="order">
+        <div class="container-fluid">
+            <h1 class="text-center" style="font-weight: bold;"><span style="color: var(--red);">Order </span>Now</h1>
+            <div class="row mt-4">
+                <div class="col-lg-6 mb-3">
+                    <img class="border" src="/images/order-img.jpg" alt="" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <form class="p-" style="width: 100%;">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                    placeholder="name" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control is-valid" id="validationServer02"
+                                    placeholder="email" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control is-invalid" id="validationServer03"
+                                    placeholder="number" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid number.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control is-invalid" id="validationServer04"
+                                    placeholder="food name" required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control is-invalid" id="validationServer04"
+                                    placeholder="Address...." required style="height: 150px;">
+                            </div>
+                        </div>
+                        <button class="btn orderbtn" type="submit">Order Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- order ======================================================================================================= section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- foooter ================================================================================== section -->
+    <section class="footer bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Facebook</a>
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Linkedin</a>
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Github</a>
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Instagram</a>
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Behance</a>
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <a href="" class="btn orderbtn">Twitter</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <h3 class="mt-3" style="font-size: 20px; font-weight: bold; color: white;">Created by <span style="color: var(--red);">Adil Shabab</span> || All Right Reserved</h3>
+            </div>
+        </div>
+    </section>
+    <!-- foooter ================================================================================== section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- type animation js  -->
+    <script src="/typed.js"></script>
+
+    <!-- custome js  -->
+    <script src="script.js"></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+    <!-- popper.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>

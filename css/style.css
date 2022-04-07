@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'nunito';
+}
+:root{
+    --red: #ff3838;
+}
+.para{
+    font-size: 18px;
+}
+section{
+    padding: 80px 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* navbar section ======================================================== styling starts */
+.navbar{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+.navbar .navbar-brand i{
+    color: var(--red);
+    margin-right: 5px;
+    font-size: 25px;
+}
+.navbar .navbar-brand span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar .navbar-nav li a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar .navbar-nav li{
+    padding: 5px;
+    border-radius: 25px;
+    margin-right: 15px;
+    border: 1px solid white;
+    transition: all 0.8s ease;
+}
+.navbar .navbar-nav li:hover{
+    background-color: black;
+}
+.navbar .navbar-nav li:hover a{
+    color: white;
+}
+.navbar button i{
+    font-size: 25px;
+}
+/* navbar section ============================================================= styling ends */
+
+
+
+
+
+
+/* home section ================================================================ styling starts */
+.home{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background: url(/images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    background-size: cover;
+    padding: 100px 10px;
+}
+.orderbtn{
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.orderbtn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: 0.3s linear;
+    z-index: -1;
+}
+.orderbtn:hover::before{
+    width: 100%;
+    left: 0;
+    color: #fff
+}
+.orderbtn:hover{
+    color: white;
+}
+.img-column{
+    padding: 80px;
+}
+.home-img{
+    animation: float 8s linear infinite;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+}
+/* home section ================================================================ styling ends */
+
+
+
+
+
+
+
+
+
+/* special scetion ================================================================= styling starts */
+.box{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    padding: 25px;  
+    display: inline-block;
+    cursor: pointer; 
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.box-1::before,
+.box-2::before,
+.box-3::before,
+.box-4::before,
+.box-5::before,
+.box-6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.8s linear;
+    z-index: -1;
+}
+.box-1::before{
+    background: url(/images/s-img-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-2::before{
+    background: url(/images/s-img-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-3::before{
+    background: url(/images/s-img-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-4::before{
+    background: url(/images/s-img-4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-5::before{
+    background: url(/images/s-img-5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-6::before{
+    background: url(/images/s-img-6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-1:hover::before,
+.box-2:hover::before,
+.box-3:hover::before,
+.box-4:hover::before,
+.box-5:hover::before,
+.box-6:hover::before{
+    width: 100%;
+    left: 0;
+    z-index: 100000;
+}
+.box-1.active .hidden,
+.box-2.active .hidden,
+.box-3.active .hidden,
+.box-4.active .hidden,
+.box-5.active .hidden,
+.box-6.active .hidden{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.arrow{
+    background: red;
+    color: white;
+    position: fixed;
+    top: 650px;
+    z-index: 100;
+    right: 50px;
+}
+.arrow:hover{
+    background: white;
+    color: red;
+    border: 1px solid red;
+}
+/* special scetion ================================================================= styling strts */
+
+
+
+
+
+
+
+/* popular section ============================================================================= styling starts */
+.area{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: -1;
+}
+.area h2{
+    margin-top: 8px;
+}
+.star i{
+    font-size: 22px;
+    color: yellow;
+    font-weight: bold;
+}
+.star{
+    margin-bottom: 8px;
+}
+.button{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: #f50909;
+}
+/* popular section ============================================================================= styling Ends */
+
+
+
+
+
+
+/* how it work section ===================================================================== styling starts */
+.heading{
+    font-weight: bold;
+    font-size: 23px;
+}
+.step-img{
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+/* how it work section ===================================================================== styling starts */
+
+
+
+
+
+
+
+/* gallery section ==================================================================== styling starts */
+.image-section{
+    position: relative;
+    border: 10px solid white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+.text-area{
+    padding: 50px 10px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s ease;
+    display: none;
+}
+.image-section:hover .text-area{
+    display: block;
+}
+/* gallery section ==================================================================== styling ends */
+
+
+
+
+
+
+
+/* Review section ======================================================================== styling starts */
+.stars i{
+    color: var(--red);
+}
+.stars i:last-child{
+    color: rgb(207, 204, 204);
+}
+.bin{
+    margin-bottom: 100px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    border: 10px solid white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+.text{
+    margin-top: 80px;
+}
+.rounded-circle{
+    position: absolute;
+    top: -80px;
+    left: 33%;
+    border: 10px solid white;
+}
+@media (max-width:768px) {
+    .rounded-circle{
+        top: -120px;
+    }
+    .bin{
+        margin-bottom: 120px;
+    }
+}
+@media (max-width:566px) {
+    .rounded-circle{
+        top: -100px;
+    }
+    .bin{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:406px) {
+    .rounded-circle{
+        top: -80px;
+    }
+    .bin{
+        margin-bottom: 100px;
+    }
+}
+/* Review section ======================================================================== styling starts */
+
+
+
+
+
+
+/* order section ========================================================================================== styling starts */
+.border{
+    border-radius: 15px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+/* order section ========================================================================================== styling ends */
+
+
+
+
+/* footer section ====================================================== styling starts */
+.footer a{
+    margin-right: 15px;
+}
+/* footer section ====================================================== styling ends */
