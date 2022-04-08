@@ -18,7 +18,37 @@ section{
 html{
     scroll-behavior: smooth;
 }
-
+.orderbtn{
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.orderbtn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: 0.3s linear;
+    z-index: -1;
+}
+.orderbtn:hover::before{
+    width: 100%;
+    left: 0;
+    color: #fff
+}
+.orderbtn:hover{
+    color: white;
+}
 
 
 /* navbar section ======================================================== styling starts */
@@ -74,37 +104,6 @@ html{
     box-sizing: border-box;
     background-size: cover;
     padding: 100px 10px;
-}
-.orderbtn{
-    display: inline-block;
-    padding: 8px 20px;
-    border: 2px solid var(--red);
-    color: var(--red);
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.orderbtn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background: var(--red);
-    transition: 0.3s linear;
-    z-index: -1;
-}
-.orderbtn:hover::before{
-    width: 100%;
-    left: 0;
-    color: #fff
-}
-.orderbtn:hover{
-    color: white;
 }
 .img-column{
     padding: 80px;
